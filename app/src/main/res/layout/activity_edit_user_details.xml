@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EEEEEE"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfilePictureOfLoggedInUser"
+            android:layout_marginTop="7dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_menu_council_or_employee"/>
+
+        <!-- UserID -->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtUserID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:hint="User ID"
+            android:textSize="20dp"
+            android:inputType="textCapSentences"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true" />
+
+        <!-- Firstname -->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@id/txtFirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:hint="Firstname"
+            android:textSize="20dp"
+            android:inputType="textCapSentences"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true" />
+
+        <!-- Lastname -->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@id/txtLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:hint="Lastname"
+            android:textSize="20dp"
+            android:inputType="textCapSentences"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="30"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true" />>
+
+        <!-- Username -->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:hint="Username"
+            android:textSize="20dp"
+            android:inputType="textCapSentences"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="30"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true" />
+
+        <!-- PhoneNumber -->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@id/txtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:hint="Phone Number"
+            android:textSize="20dp"
+            android:inputType="phone"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true" />
+
+        <!-- Password -->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:hint="Password"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="16"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true" />
+
+        <TextView
+            android:id="@+id/btnShowOrHidePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:textSize="16dp"
+            android:text="Show Password"
+            android:drawableLeft="@drawable/ic_visibility_black" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnUpdateInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center|bottom"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:padding="12dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#EEEEEE"
+            android:textSize="20dp"
+            android:text="UPDATE INFO"/>
+    </LinearLayout>
+
+</ScrollView>

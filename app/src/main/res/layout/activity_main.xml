@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:background="#EEEEEE"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:src="@drawable/barangay_extend_logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtEmailOrUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_person"
+        android:inputType="text"
+        android:hint="Email or Username"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:layout_marginBottom="0dp"
+        app:met_baseColor="@android:color/black"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="30"
+        app:met_primaryColor="@color/colorPrimary"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_password"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:layout_marginBottom="0dp"
+        app:met_baseColor="@android:color/black"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="16"
+        app:met_primaryColor="@color/colorPrimary"
+        app:met_singleLineEllipsis="true"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:padding="12dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#EEEEEE"
+        android:text="LOG IN"/>
+
+    <TextView
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#EEEEEE"
+        android:text="Forgot Password?"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/btnWhatsThis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#EEEEEE"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:text="What's this?"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="New to Barangay Extend? "/>
+
+        <TextView
+            android:id="@+id/btnSignInOrRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:textSize="18dp"
+            android:text="SIGN UP"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</LinearLayout>

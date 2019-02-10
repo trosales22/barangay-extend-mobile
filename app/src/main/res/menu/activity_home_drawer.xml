@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_myAccount"
+        android:icon="@drawable/ic_menu_my_account"
+        android:title="My Account" />
+
+    <item
+        android:id="@+id/nav_postSomething"
+        android:icon="@drawable/ic_menu_create"
+        android:title="Write something..." />
+
+    <item
+        android:id="@+id/nav_requestForPosition"
+        android:icon="@drawable/ic_work_black"
+        android:title="Request For Position" />
+
+    <item
+        android:id="@+id/nav_checkFeedbacks"
+        android:icon="@drawable/ic_feedback_black"
+        android:title="Check Feedbacks" />
+
+    <item
+        android:id="@+id/nav_checkRequests"
+        android:icon="@drawable/ic_assignment_black"
+        android:title="Check Requests" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_menu_logout"
+        android:title="Log out" />
+
+    <item android:title="Add">
+        <menu>
+            <item
+                android:id="@+id/nav_barangay"
+                android:icon="@drawable/ic_location_city_black"
+                android:title="Barangay" />
+
+            <item
+                android:id="@+id/nav_addQuestionWithAnswer"
+                android:icon="@drawable/ic_question_answer_black"
+                android:title="FAQ" />
+
+            <item
+                android:id="@+id/nav_addSecurityQuestion"
+                android:icon="@drawable/ic_security_black"
+                android:title="Security Question" />
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_faq"
+                android:title="FAQ" />
+
+            <item
+                android:id="@+id/nav_barangayExtend"
+                android:title="About Barangay Extend" />
+            <item
+                android:id="@+id/nav_developer"
+                android:title="About The Developer" />
+
+            <item
+                android:id="@+id/nav_feedbackAndHelp"
+                android:title="Feedback &amp; Help"/>
+        </menu>
+    </item>
+</menu>

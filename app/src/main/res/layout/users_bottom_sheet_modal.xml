@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfilePictureOfSelectedUser"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_menu_council_or_employee"/>
+
+    <TextView
+        android:id="@+id/txtFullnameOfSelectedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fullname"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/txtEmailAddressOfSelectedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:drawableLeft="@drawable/ic_email_black"
+        android:gravity="center_vertical"
+        android:text="Email Address"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/txtUsernameOfSelectedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:drawableLeft="@drawable/ic_person_black"
+        android:gravity="center_vertical"
+        android:text="Username"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/txtPhoneNumberOfSelectedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:gravity="center_vertical"
+        android:text="Phone Number"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/txtGenderOfSelectedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:drawableLeft="@drawable/ic_perm_identity_black"
+        android:gravity="center_vertical"
+        android:text="Gender"
+        android:textColor="#FFFFFF"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtUserTypeOfSelectedUser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_menu_places_of_interest"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="User Type" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:text=" at " />
+
+        <TextView
+            android:id="@+id/txtBarangayOfSelectedUser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="Barangay" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnDeleteSelectedUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Delete This User"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        android:background="#e53935"/>
+
+</LinearLayout>

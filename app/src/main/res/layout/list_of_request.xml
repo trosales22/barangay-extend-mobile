@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout_request">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/cardView_request"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfilePicture"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:civ_border_width="2dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtFullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgProfilePicture"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="Fullname"/>
+
+                <TextView
+                    android:id="@+id/txtUserType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgProfilePicture"
+                    android:layout_below="@+id/txtFullname"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="User Type"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtRequestedPosition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:background="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:text="Requested Position"/>
+
+                <TextView
+                    android:id="@+id/txtRequestDateAndTimeRegistered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:background="#5C6BC0"
+                    android:textSize="16sp"
+                    android:text="Request Date and Time Registered"/>
+
+                <TextView
+                    android:id="@+id/txtRequestDateAndTimeConfirmed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="#AB47BC"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:text="Request Date And Time Confirmed"/>
+
+                <TextView
+                    android:id="@+id/txtRequestStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="#E91E63"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:text="Request Status"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnDeleteRequestForPosition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:text="Delete"
+                    android:textSize="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnDeclineRequestForPosition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:text="Decline"
+                    android:textSize="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnApproveRequestForPosition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:text="Approve"
+                    android:textSize="16dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

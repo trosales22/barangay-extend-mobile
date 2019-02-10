@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Create Account Button -->
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height = "60dp"
+        android:text="CREATE ACCOUNT"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFF"
+        android:layout_marginBottom="20dp"
+        android:gravity="right|center_vertical"
+        android:drawableRight="@drawable/ic_action_check"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#EEEEEE"
+        android:paddingTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="20dp">
+
+            <!-- Firstname -->
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtFirstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Firstname"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:inputType="textCapSentences"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="20"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true"/>
+
+            <!-- Lastname -->
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtLastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Lastname"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:inputType="textCapSentences"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="30"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+
+            <!-- Email Address -->
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Email Address"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:inputType="textEmailAddress|textWebEmailAddress"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="50"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+
+            <!-- Username -->
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Username"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:inputType="text"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="30"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+
+            <!-- PhoneNumber -->
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Phone number"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:inputType="phone"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="11"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+
+            <!-- Gender -->
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/cmbGender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:spinnerMode="dialog"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFF" />
+
+            <!-- Barangay -->
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/cmbBarangay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:spinnerMode="dialog"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFF" />
+
+            <!-- Secret Question -->
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/cmbSecretQuestion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:spinnerMode="dialog"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFF" />
+
+            <!-- Secret Answer -->
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtSecretAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Write your secret answer..."
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:inputType="text"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="300"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+
+            <!-- Password -->
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Password"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:inputType="textPassword"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="16"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

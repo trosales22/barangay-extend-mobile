@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EEEEEE"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Description"
+            android:textSize="26dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="
+                Barangay Extend is an app which focus is to simplify the lifestyle and daily task that can be useful for both councils, employees and residents.\n
+                Residents can see directories with information about a wide range of services, important news that is relevant to residents such as council events, road closures, extreme weather warnings, school closures, traffic incidents, and reporting problems by uploading images including GPS Location information.\n
+                Employees can keep in touch with what’s happening at the office and with important news.\n
+                Councils can raise awareness about local businesses and promote local attraction and other places of interest, manage their own information, and ensure that residents are always aware of opening times, special events and news.\n
+                " />
+    </LinearLayout>
+</ScrollView>

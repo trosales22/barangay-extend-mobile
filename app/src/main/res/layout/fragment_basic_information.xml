@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="end">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfilePictureOfLoggedInUser"
+            android:layout_marginTop="7dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#212121"
+            app:civ_border_width="2dp"
+            android:src="@drawable/ic_menu_council_or_employee"/>
+
+        <TextView
+            android:id="@+id/txtFullnameOfLoggedInUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Fullname"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnUpdateInfoOfLoggedInUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/ic_menu_create"
+            android:textAlignment="center"
+            android:text="Update Info"/>
+
+        <TextView
+            android:id="@+id/txtEmailAddressOfLoggedInUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_email_black"
+            android:gravity="center_vertical"
+            android:text="Email Address" />
+
+        <TextView
+            android:id="@+id/txtUsernameOfLoggedInUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_person_black"
+            android:gravity="center_vertical"
+            android:text="Username" />
+
+        <TextView
+            android:id="@+id/txtPhoneNumberOfLoggedInUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:gravity="center_vertical"
+            android:text="Phone Number" />
+
+        <TextView
+            android:id="@+id/txtGenderOfLoggedInUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_perm_identity_black"
+            android:gravity="center_vertical"
+            android:text="Gender" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtUserTypeOfLoggedInUser"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:drawableLeft="@drawable/ic_menu_places_of_interest"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:text="User Type" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:text=" at " />
+
+            <TextView
+                android:id="@+id/txtBarangayOfLoggedInUser"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:text="Barangay" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

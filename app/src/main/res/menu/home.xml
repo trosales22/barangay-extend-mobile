@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btnSearch"
+        android:icon="@drawable/ic_action_search"
+        android:title="Search..."
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item
+        android:id="@+id/action_FAQs"
+        android:orderInCategory="100"
+        android:title="FAQs"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_aboutBarangayExtend"
+        android:orderInCategory="100"
+        android:title="About Barangay Extend"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_aboutTheDeveloper"
+        android:orderInCategory="100"
+        android:title="About The Developer"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_feedbackAndHelp"
+        android:orderInCategory="100"
+        android:title="Feedback &amp; Help"
+        app:showAsAction="never" />
+</menu>
